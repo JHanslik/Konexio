@@ -1,0 +1,189 @@
+@font-face {
+    font-family: JosefinSans-Light;
+    src: url(fonts/JosefinSans-Light.ttf);
+}
+@font-face {
+    font-family: JosefinSans-Semibold;
+    src: url(fonts/JosefinSans-SemiBold.ttf);
+}
+
+
+body {
+    margin: 0 0 0 0;
+    color: white;
+    font-family: 'JosefinSans-Light';
+}
+h1 {
+    font-family: 'JosefinSans-SemiBold';
+}
+
+header {
+    width: auto;
+}
+header nav {
+    padding: 0em 3em 0em 3em;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav h1 {
+    font-size: 2.5em;
+}
+header nav .right {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+header nav .right p {
+    margin: 0 1em 0 0;
+}
+header nav .right p:hover {
+    color : red;
+    cursor: pointer;
+}
+header nav .right button {
+    font-family: 'JosefinSans-Light';
+    background-color: inherit;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 7px;
+    border-color: white;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 10px 10px 10px;
+    transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.presentation {
+    background: url(img/background.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 10em 20em 11em 20em;
+  
+}
+.presentation h1 {
+    margin: 0em 0em 2em 0em;
+    font-size: 2.5em;
+}
+.presentation p {
+    margin: 0em 0em 3em 0em;
+    font-size: 2em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.presentation button {
+    font-family: 'JosefinSans-Light';
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    padding: 1em 3em 1em 3em;
+    transition: color 0.5s, background-color 0.5s;
+}
+.presentation button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: red;
+}
+
+.recherche {
+    margin: 0;
+    background: rgb(235, 221, 223);
+    padding: 8em 0em 10em 0em;
+    text-align: center;
+    align-content: center;
+}
+.recherche h1 {
+    font-size: 3em;
+    color: black;
+}
+.recherche form .search {
+    font-family: 'JosefinSans-Light';
+    font-size: 1.5em;
+    padding: 1em 15em 1em 2em;
+    border: none;
+    border-radius: 7px;
+}
+.recherche form .submit {
+    font-family: 'JosefinSans-Light';
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    padding: 1em 2.5em 1em 2.5em;
+    transition: color 0.5s, background-color 0.5s;
+}
+.recherche form .submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: red;
+}
+
+.paragraphes {
+    margin: 7em 1em 12em 1em;
+    color: black;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.paragraphes .header {
+    height: 0.4em;
+    width: 120%;
+    background-color: red;
+    align-content: center;
+}
+.paragraphes .reminder {
+    margin: 0em 0.5em 0em 0.5em;
+    padding: 0em 2em 0em 2em;
+    text-align: left;
+}
+.paragraphes h1 {
+    font-size: 1.5em;
+}
+.paragraphes p {
+    font-size: 1.5em;
+}
+
+.pieddepage {
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pieddepage p {
+    margin: 1em 0 0 0;
+    font-size: 1.5em;
+}
+.pieddepage .adresse {
+    margin: 1em 0 1em 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        width: 100vw;
+    }
+    header nav .right {
+        flex-direction: column;
+    }
+
+    .presentation {
+        padding: 0;
+        width: 100vs;
+    }
+}

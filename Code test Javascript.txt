@@ -1,0 +1,21 @@
+let str = "I don't know why";
+const positivResult = "Oui";
+const negativResult = "Non";
+let hasAnY;
+
+for (let character of str) {
+  if (character =='y'){
+    hasAnY = true;
+    break;
+  }
+  else {
+    hasAnY = false;
+  }
+}
+
+if (hasAnY == true) {
+  console.log(positivResult);
+}
+else {
+  console.log(negativResult);
+}
